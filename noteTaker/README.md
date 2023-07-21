@@ -3,31 +3,6 @@
 
 📓 noteTaker is a serverless note-taking app with MERN stacks, aiming at efficient idea management, offering features such as search functionality, auto-generation of summaries, and tagging with openAI.
 
-🔗 Website URL: <a href="https://www.noteTaker.space" target="_blank">www.noteTaker.space</a>
-
-> ⚠️ Please be aware that in guest mode, your data will be lost upon logging out.
-
-📖 How to Use: <a href="https://github.com/fockspaces/noteTaker/blob/main/documentations/Tutorial.md" target="_blank">Tutorial</a>
-
-📓 Under the Hood:
-<a href="https://github.com/fockspaces/noteTaker/blob/main/documentations/TechSkills.md" target="_blank"> Details</a>
-
-_**Note:** In the '**Under the Hood**' section, we'll take a closer look at the technical aspects of the project and how various technologies and skills were employed to achieve specific goals._
-
----
-
-## Table of Contents
-
-- [Main Features](#main-features)
-- [Architecture](#architecture)
-- [MongoDB Database Schema](#mongodb-database-schema)
-- [CI / CD](#ci--cd)
-- [API Documentation](#api-documentation)
-- [Technique](#technique)
-- [Cloud Services (AWS)](#cloud-services-aws)
-- [Contact](#contact)
-
----
 
 ## Main Features
 
