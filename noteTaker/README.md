@@ -38,21 +38,6 @@ _**Note:** In the '**Under the Hood**' section, we'll take a closer look at the 
 
 ---
 
-## Architecture
-
-## <img src="https://github.com/fockspaces/noteTaker/assets/63909491/176a43bc-2c22-40e0-9657-3f5e4dc6e4a0" alt="image" width="100%" height="auto" />
-
-
-
----
-
-## MongoDB Database Schema
-
-The database table schema is defined using Mongoose schema.
-
-## <img src="https://github.com/fockspaces/noteTaker/assets/63909491/4435ddcc-1f0a-4c9e-880f-2c6f022e77b8" alt="image" width="100%" height="auto" />
-
----
 
 ## CI / CD
 
@@ -70,9 +55,7 @@ The deployment process for both frontend and backend components is managed separ
 
 Our project utilizes integration testing, focusing primarily on typical use-cases and critical paths.
 
-You can find the coverage report in the <code>/backend/coverage</code> directory of the repository.
 
-![image](https://github.com/fockspaces/noteTaker/assets/63909491/a4a45eef-eacd-4ca5-a877-5bead4be5777)
 
 ### Tools
 
@@ -83,13 +66,7 @@ You can find the coverage report in the <code>/backend/coverage</code> directory
 
 ---
 
-## API Documentation
 
-The API documentation is supported by Swagger
-
-🔗 https://app.swaggerhub.com/apis-docs/noteTaker/fast-note_api/1.0.0
-
----
 
 ## Technique
 
