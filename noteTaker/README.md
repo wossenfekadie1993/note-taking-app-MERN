@@ -1,16 +1,5 @@
 # noteTaker
 
-<p align="center">
-  <img src="https://github.com/fockspaces/noteTaker/assets/63909491/d6841cb8-46aa-4803-9053-00c97c6fe521" alt="noteTaker" width="50%" height="auto"/>
-</p>
-
-<p align="center">  
-  <img alt="AWS Services" src="https://img.shields.io/badge/AWS-Services-FF9900?logo=amazonaws"/>  
-  <a href="https://github.com/fockspaces/noteTaker/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
-  <img alt="backend workflow" src="https://github.com/fockspaces/noteTaker/actions/workflows/backend.yml/badge.svg"/>
-  <a href="https://app.swaggerhub.com/apis-docs/noteTaker/fast-note_api/1.0.0"><img alt="Swagger API" src="https://img.shields.io/badge/Swagger-API-brightgreen?logo=swagger"/></a>
-  <img alt="Terraform" src="https://img.shields.io/badge/Terraform-v1.0.0-623CE4.svg?logo=terraform"/>
-</p>
 
 📓 noteTaker is a serverless note-taking app with MERN stacks, aiming at efficient idea management, offering features such as search functionality, auto-generation of summaries, and tagging with openAI.
 
