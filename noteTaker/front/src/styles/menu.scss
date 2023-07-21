@@ -1,0 +1,132 @@
+.menu-wrapper {
+  position: fixed; // Make the menu fixed
+  top: 0; // Align the menu to the top
+  left: 0; // Align the menu to the left
+  height: 100%; // Make the menu fill the whole height of the screen
+  z-index: 9999; // Put the menu on top of other elements
+}
+
+.menu {
+  width: 180px;
+  height: 100%;
+
+  background-color: #141313;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+
+  &.collapsed {
+    width: 80px; // Increase the width when collapsed
+  }
+
+  .collapse-btn {
+    position: absolute; // Add absolute positioning
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: #141313;
+    display: flex;
+    flex-direction: column; // Change flex direction to column
+    justify-content: center; // Center the button vertically
+    align-items: center;
+    width: 20px; // Set the width of the button
+    height: 100%; // Stretch the button vertically
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+      ); // Add a hover effect to the collapse-btn
+    }
+  }
+  .profile-picture {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 18px;
+    filter: brightness(80%);
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex; // Add display flex
+    flex-direction: column; // Make the list items display in a column
+    justify-content: center; // Center the list items vertically
+    height: 88%; // Set the height to 100% to fill the menu container
+
+    li {
+      padding: 0;
+      margin: 0;
+      .nav-link.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .nav-link {
+        display: flex;
+        align-items: left;
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.3s;
+
+        svg {
+          margin-right: 15px;
+          font-size: 20px; // Increase the font-size of the icons
+        }
+
+        span {
+          display: inline; // Show the text by default
+          font-size: 14px; // Increase the font-size of the icons
+        }
+      }
+
+      &:hover .nav-link {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); // Adjust the hover background color
+      }
+    }
+  }
+}
+
+.menu.collapsed {
+  .collapse-btn {
+    justify-content: center; // Align the button to the center when collapsed
+    padding-right: 0; // Remove right padding when collapsed
+    background-color: #141313;
+    &:hover {
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.1
+      ); // Add a hover effect to the collapse-btn
+    }
+  }
+  ul {
+    li {
+      .nav-link {
+        width: 100%;
+
+        svg {
+          font-size: 24px; // Increase the font-size of the icons
+        }
+
+        span {
+          display: none; // Hide the text when the menu is collapsed
+        }
+      }
+    }
+  }
+}

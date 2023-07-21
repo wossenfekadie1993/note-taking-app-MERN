@@ -1,0 +1,117 @@
+.document-item {
+  min-width: 200px;
+  min-height: 250px;
+  margin-bottom: 1rem;
+
+  .hover-effect:hover {
+    box-shadow: 0 1px 1px;
+    transition: box-shadow 0.3s;
+    border-color: #333;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .card {
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.1); // Add box-shadow here
+    height: auto; // Allow the card to grow with the content
+    border-radius: 15px;
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+
+      height: 100%;
+
+      .card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 1rem;
+        .title-text {
+          display: -webkit-box;
+          -webkit-line-clamp: 2; // Set the number of lines you want to display
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 80%;
+        }
+
+        .document-date {
+          margin-top: 8px;
+          font-size: 0.7em;
+          color: #6c757d;
+        }
+      }
+
+      .list__header {
+        display: flex;
+        gap: 0.5rem;
+
+        button {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+        }
+
+        .action-icon {
+          font-size: 1rem; /* Change the value to your desired size */
+        }
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 0.15rem;
+          cursor: pointer;
+          color: #6c757d;
+        }
+
+        .text-warning {
+          color: #ffc107 !important;
+        }
+      }
+    }
+  }
+}
+
+.favorite-icon {
+  padding: 0.25rem;
+  margin-right: 0.45rem;
+
+  .bookmark-icon {
+    position: absolute;
+    top: -6px; // Adjust to your preference
+    right: -9px; // Adjust to your preference
+    cursor: pointer;
+
+    svg {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .bookmark-icon:hover {
+    filter: drop-shadow(1px 3px 3px #525252);
+  }
+}
+
+.text-saturated-orange {
+  color: #ffa500 !important; // Saturated orange color
+}
+
+.description-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; // Set the number of rows you want to display
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-summary-preview {
+  color: #aaa;
+  font-size: 0.9em;
+}

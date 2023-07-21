@@ -1,0 +1,52 @@
+@import "~@yaireo/tagify/src/tagify.scss";
+
+.tags-container {
+  margin-bottom: 15px;
+  width: 100%;
+
+  .tagify {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: border-color 0.3s;
+    overflow-y: auto;
+    max-height: 150px;
+
+    &:focus-within {
+      border-color: #007bff;
+    }
+
+    .tagify__tag-text {
+      width: 100%; // Add this line
+      max-width: 200px;
+      overflow: hidden; // Add this line
+      text-overflow: ellipsis; // Add this line
+      white-space: nowrap; // Add this line
+    }
+
+    input {
+      flex-grow: 1;
+      border: none;
+      outline: none;
+    }
+  }
+}
+
+.tags-look {
+  background-color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+
+  .tagify__dropdown__item {
+    padding: 0.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}

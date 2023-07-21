@@ -1,0 +1,32 @@
+.list-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-sidebar {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  height: 90vh;
+  width: 20vw;
+  min-width: 200px;
+  flex-shrink: 0; // Prevent left-sidebar from shrinking
+  border-right: 5px solid #e0e0e0; // Added a light border
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1); // Add shadow to give depth
+}
+
+.right-side-list {
+  flex-grow: 1;
+  width: 60vw;
+  height: 90vh;
+  overflow: hidden; // disable horizontal scrolling
+  overflow-y: auto; // Enable vertical scrolling when the content exceeds the height
+  padding: 0px 20px;
+
+}
+
+.search-bar {
+  width: 100%;
+}
