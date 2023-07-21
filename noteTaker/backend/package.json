@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_ENV=test jest --runInBand --forceExit",
+    "start": "nodemon app.js",
+    "GPT": "nodemon GPTServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.312.0",
+    "@aws-sdk/s3-request-presigner": "^3.312.0",
+    "aws-sdk": "^2.1359.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-error-handler": "^1.1.0",
+    "googleapis": "^114.0.0",
+    "jsdom": "^21.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^3.2.1",
+    "redis": "^4.6.5",
+    "redis-connection-pool": "^4.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "node-mocks-http": "^1.12.2",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}
